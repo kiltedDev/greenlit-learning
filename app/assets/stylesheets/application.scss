@@ -1,0 +1,44 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: url('/assets/teacher-bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2C5A49;
+}
+
+h1 {
+  color: white;
+}
+
+.question {
+  font-size: 2em;
+  max-width: 635px;
+}
+
+
+.light-display {
+  line-height: 2.5;
+  margin-left: 40%;
+  font-size: 96px;
+}
+
+.yellow-light {
+  height: 250px;
+  width: 250px;
+	background: yellow;
+	border-radius: 50%;
+  margin-left: 40px;
+}
+
+.red-light {
+  height: 250px;
+  width: 250px;
+	background: red;
+	border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
