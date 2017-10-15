@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h1>Teacher View</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-3">
+      <div class="row">
+        <div class="yellow-light"><span class="light-display">4</span></div>
+      </div>
+      <div class="row">
+        <div class="red-light"><span class="light-display">1</span></div>
+      </div>
+  </div>
+
+  <div class="col-sm-9">
+    <div class="panel panel-default">
+      <div class="panel-heading">Open Alerts</div>
+        <table class="table table-hover">
+          <tr>
+            <th>
+              Question
+            </th>
+            <th>
+              Handlers
+            </th>
+          </tr>
+          <% @questions.each do |question| %>
+            <tr class="<%= question[:flag] %>">
+              <td class="question">
+                <%= question[:question] %>
+              </td>
+              <td class="buttons">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-success">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Resolve
+                  </button>
+                  <button type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> After Class
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> Save
+                  </button>
+                </div>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
